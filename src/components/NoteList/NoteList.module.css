@@ -1,0 +1,68 @@
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.listItem {
+  display: flex;
+  min-height: 210px;
+  flex-direction: column;
+  padding: 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.content {
+  flex: 1;
+  margin: 0 0 18px;
+  color: #475569;
+  line-height: 1.55;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tag {
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #eff6ff;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.button {
+  border: 1px solid #fecaca;
+  border-radius: 8px;
+  padding: 7px 10px;
+  background: #fff;
+  color: #b91c1c;
+}
+
+.button:hover:not(:disabled) {
+  background: #fef2f2;
+}
+
+.button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
